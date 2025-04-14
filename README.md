@@ -35,11 +35,9 @@ Este projeto demonstra a implementação do padrão de projeto Decorator em Java
 O projeto é composto pelas seguintes classes:
 
 - **Beverage**: Classe abstrata que define a interface para as bebidas.
-- **Coffee**: Classe concreta que representa uma bebida específica (café).
-- **BeverageDecorator**: Classe abstrata que estende `Beverage` e serve como base para todos os decoradores.
+- **Coffee**: Classe concreta que representa uma bebida específica (café)..
 - **Milk**: Decorador que adiciona leite à bebida.
 - **Chocolate**: Decorador que adiciona chocolate à bebida.
-- **CoffeeShop**: Classe principal que testa a implementação, criando instâncias de bebidas e aplicando os decoradores.
 
 ##### Exemplo de Uso
 
