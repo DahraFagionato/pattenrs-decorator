@@ -1,4 +1,4 @@
-![decorator](https://github.com/user-attachments/assets/cce0d28a-3363-447b-8949-0200951f11d5)
+![alt text](decorator-1.jpg)
 
 #### Definição
 O padrão Decorator permite adicionar responsabilidades a um objeto de forma dinâmica. É uma alternativa flexível à subclasse para estender funcionalidades.
@@ -17,3 +17,34 @@ O padrão Decorator permite adicionar responsabilidades a um objeto de forma din
 - Pode introduzir muitos objetos pequenos, dificultando o debug.
 - A estrutura encadeada pode ser difícil de entender se muito complexa.
 - Nem sempre é óbvio quem está decorando quem.
+
+#### Decorator X Singleton
+O padrão Decorator e o padrão Singleton atendem a necessidades diferentes no design de software. O Decorator é ideal para adicionar funcionalidades de forma flexível, enquanto o Singleton é útil para garantir que uma classe tenha apenas uma instância. 
+
+
+#### Demonstração
+
+
+##### Padrão Decorator em Java
+
+Este projeto demonstra a implementação do padrão de projeto Decorator em Java, utilizando uma classe base para bebidas e decoradores para adicionar ingredientes como leite e chocolate.
+
+##### Estrutura do Projeto
+
+O projeto é composto pelas seguintes classes:
+
+- **Beverage**: Classe abstrata que define a interface para as bebidas.
+- **Coffee**: Classe concreta que representa uma bebida específica (café).
+- **BeverageDecorator**: Classe abstrata que estende `Beverage` e serve como base para todos os decoradores.
+- **Milk**: Decorador que adiciona leite à bebida.
+- **Chocolate**: Decorador que adiciona chocolate à bebida.
+- **CoffeeShop**: Classe principal que testa a implementação, criando instâncias de bebidas e aplicando os decoradores.
+
+##### Exemplo de Uso
+
+No exemplo, começamos com um objeto `Coffee` e, em seguida, adicionamos `Milk` e `Chocolate`:
+
+```java
+Beverage beverage = new Coffee();
+beverage = new Milk(beverage);
+beverage = new Chocolate(beverage);
