@@ -49,3 +49,6 @@ No exemplo, começamos com um objeto `Coffee` e, em seguida, adicionamos `Milk` 
 Beverage beverage = new Coffee();
 beverage = new Milk(beverage);
 beverage = new Chocolate(beverage);
+```
+
+##### Integrantes: Dahra Fagionato, Emily Goulart, Maria Eduarda Berto, Nicole Santos, Pedro Lima
