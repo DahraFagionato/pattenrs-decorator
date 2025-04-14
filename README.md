@@ -44,9 +44,19 @@ O projeto é composto pelas seguintes classes:
 No exemplo, começamos com um objeto `Coffee` e, em seguida, adicionamos `Milk` e `Chocolate`:
 
 ```java
-Beverage beverage = new Coffee();
-beverage = new Milk(beverage);
-beverage = new Chocolate(beverage);
+public class Main {
+    public static void main(String[] args) {
+        Bebida bebida = new Cafe();
+        System.out.println(bebida.getDescricao() + " $" + bebida.custo());
+
+        bebida = new Leite(bebida);
+        System.out.println(bebida.getDescricao() + " $" + bebida.custo());
+
+        bebida = new Acucar(bebida);
+        System.out.println(bebida.getDescricao() + " $" + bebida.custo());
+    }
+}
+
 ```
 
 ##### Integrantes: Dahra Fagionato, Emily Goulart, Maria Eduarda Berto, Nicole Santos, Pedro Lima
