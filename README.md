@@ -1,5 +1,4 @@
-<img src="![decorator](https://github.com/user-attachments/assets/d47fc635-ab76-49a1-be6a-cb0534f967d7)
-" alt="Descrição da imagem" width="300"/>
+<img src="imagens/decorator.jpg" alt="Descrição da imagem" width="300"/>
 
 #### Definição
 O padrão Decorator permite adicionar responsabilidades a um objeto de forma dinâmica. É uma alternativa flexível à subclasse para estender funcionalidades.
